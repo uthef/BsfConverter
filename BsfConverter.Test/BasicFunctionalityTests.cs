@@ -117,6 +117,10 @@ public class BasicFunctionalityTests
         {
             for (int j = 0; j < outMdArr[i].Length; j++)
             {
+                TestContext.Write("\t");
+
+                if (outMdArr[i][j].Length == 0) TestContext.Write("<empty array>");
+
                 for (int k = 0; k < outMdArr[i][j].Length; k++)
                 {
                     TestContext.Write(outMdArr[i][j][k] + "\t");
